@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <title>Instagram</title>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <div class="col-2 col-md-4">
+                <!-- Icono -->
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <!-- Palabra Instagram -->
+                <a class="navbar-brand" href="#">Instagram</a>
+            </div>
+            <!-- Modal -->
+            <div class="col-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label"><b></b> Caption:</label>
+                                <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                            </div>
+                        </form>
+                        <i class="fa-solid fa-camera border p-2"></i>
+                        <i class="fa-solid fa-location-dot border p-2"></i>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Fin Modal -->
+
+        <!-- Inicio boton ajustes -->
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-sharp fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </div>
+      </nav>     
+    </div>    
+        <!-- Fin de boton ajustes -->
+
+      <!-- Inicio Opciones -->
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <!-- Inicio Primera Vista cabecera -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <!-- Fin Primera Vista cabecera-->
+
+        <!-- Inicio segunda Vista cabecera -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                <i class="fa-sharp fa-solid fa-square"></i>
+            </button>
+        </li>
+      </ul> 
+      <!-- Fin segunda Vista cabecera -->
+
+       <!-- Inicio Primera Vista cuerpo-->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <br>
+          <!-- Primera imagen -->
+          <div class="card mx-auto" style="width: 22rem;">
+                <div class="card-header d-flex">
+                  <h6 class="w-75 p-1">My crazy dog Spark!</h6>
+                  <h6 class="ps-5">12/14</h6>
+                </div>
+                <div class="card-body p-0">
+                  <img src="https://i.pinimg.com/736x/4b/50/9b/4b509baa6c635a7b61cc66f74a6b8154.jpg" alt="...">
+                </div>
+                <div class="card-footer">
+                  <b>204 likes</b>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae enim corporis ea numquam deleniti debitis, adipisci quaerat, vel aspernatur atque provident consequatur veniam necessitatibus blanditiis delectus eum vitae. Accusantium.</p>
+                </div> 
+            </div>
+            <br>
+            <!-- Segunda imagen -->
+            <div class="card mx-auto" style="width: 22rem;">
+              <div class="card-header d-flex">
+                <h6 class="w-75 p-1">My crazy dog Spark!</h6>
+                <h6 class="ps-5">12/14</h6>
+              </div>
+              <div class="card-body p-0">
+                <img src="https://i.pinimg.com/736x/4b/50/9b/4b509baa6c635a7b61cc66f74a6b8154.jpg" alt="...">
+              </div>
+              <div class="card-footer">
+                <b>204 likes</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae enim corporis ea numquam deleniti debitis, adipisci quaerat, vel aspernatur atque provident consequatur veniam necessitatibus blanditiis delectus eum vitae. Accusantium.</p>
+              </div> 
+          </div>
+            <br>
+            <!-- Tercera imagen -->
+          <div class="card mx-auto" style="width: 22rem;">
+                <div class="card-header d-flex">
+                  <h6 class="w-75 p-1">My crazy dog Spark!</h6>
+                  <h6 class="ps-5">12/14</h6>
+                </div>
+                <div class="card-body p-0">
+                  <img src="https://i.pinimg.com/736x/4b/50/9b/4b509baa6c635a7b61cc66f74a6b8154.jpg" alt="...">
+                </div>
+                <div class="card-footer">
+                  <b>204 likes</b>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae enim corporis ea numquam deleniti debitis, adipisci quaerat, vel aspernatur atque provident consequatur veniam necessitatibus blanditiis delectus eum vitae. Accusantium.</p>
+                </div> 
+            </div>
+        </div>
+      </div>
+    </div>
+       <!-- Fin Primera Vista cuerpo-->
+
+        <!-- Inicio segunda Vista cuerpo-->
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container text-center">
+                <div class="row">
+                  <!-- Primera fila -->
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://pbs.twimg.com/media/DrfMjWKX4AAzjWg.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://i.pinimg.com/originals/bc/cd/29/bccd29246dbc344601977982c713e40d.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/1288267350052089856/MRNGthOu_400x400.jpg" alt="">
+                  </div>
+                  <!-- Segunda fila -->
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://pbs.twimg.com/media/DrfMjWKX4AAzjWg.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://i.pinimg.com/originals/bc/cd/29/bccd29246dbc344601977982c713e40d.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/1288267350052089856/MRNGthOu_400x400.jpg" alt="">
+                  </div>
+                  <!-- Tercera fila -->
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://pbs.twimg.com/media/DrfMjWKX4AAzjWg.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://i.pinimg.com/originals/bc/cd/29/bccd29246dbc344601977982c713e40d.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/1288267350052089856/MRNGthOu_400x400.jpg" alt="">
+                  </div>
+              </div>
+        </div>
+      <!-- Fin segunda Vista cuerpo-->
+      <!-- Fin Opciones -->
+
+      <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
